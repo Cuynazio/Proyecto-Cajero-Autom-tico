@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <style>
+        .titulo {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            font-family: 'Sixtyfour', sans-serif;
+            background-color: rgb(240, 224, 83);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .contenedor {
+            background-color: rgb(222, 241, 243);
+            padding: 20px;
+            font-family: 'Sixtyfour', sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">MINI CAJERO AUTOMATICO</h1>
+    </div>
+    <div>
+        <p class="center-2">mini copia de un cajero real uwu</p>
+    </div>
+    <form id="loginForm">
+        <label for="name" class="n-1">Nombre de usuario:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="password" class="n-2">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit" class="btn-1">Iniciar sesión</button>
+    </form>
+    <div id="options" style="display: none;">
+        <h2>Opciones:</h2>
+        <button onclick="deposit()" class="a-1">Depositar</button>
+        <button onclick="withdraw()" class="a-2">Retirar</button>
+        <button onclick="checkBalance()" class="a-3">Consultar saldo</button>
+        <button onclick="exit()" class="a-4">Salir</button>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
